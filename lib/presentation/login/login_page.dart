@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
+
 import '../resources/constants/app_assets.dart';
-import '../resources/constants/app_strings.dart';
 import '../resources/constants/app_size.dart';
+import '../resources/constants/app_strings.dart';
 import '../resources/styles/app_colors.dart';
 import '../resources/switchers/app_router.dart';
 import '../resources/widgets/public_button.dart';
 import '../resources/widgets/public_text_form_field.dart';
-import 'package:sizer/sizer.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});

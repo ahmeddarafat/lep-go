@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:lep_go/domain/cubit/bottom_navigation_bar/bottom_navigation_cubit.dart';
+import '../domain/cubit/bottom_navigation_bar/bottom_navigation_cubit.dart';
 import '../presentation/resources/styles/app_themes.dart';
 import '../presentation/resources/switchers/app_router.dart';
 import 'package:sizer/sizer.dart';

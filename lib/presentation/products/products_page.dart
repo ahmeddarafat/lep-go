@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:lep_go/presentation/home/components.dart';
-import 'package:lep_go/app/apis_demo.dart';
 import 'package:sizer/sizer.dart';
 
 import '../resources/constants/app_size.dart';
 import '../resources/constants/app_strings.dart';
-import '../resources/widgets/public_back_arrow.dart';
-import '../resources/widgets/public_offer_card.dart';
+import '../resources/widgets/back_arrow.dart';
+import '../resources/widgets/public_headline_row.dart';
+import '../resources/widgets/public_products_cards.dart';
 import '../resources/widgets/public_text_form_field.dart';
 
 class ProductsPage extends StatefulWidget {

@@ -1,6 +1,7 @@
-import 'package:lep_go/presentation/resources/constants/app_strings.dart';
-
+import '../domain/models/product_details_model.dart';
+import '../domain/models/seller_model.dart';
 import '../presentation/resources/constants/app_assets.dart';
+import '../presentation/resources/constants/app_strings.dart';
 
 //* Home
 /// categories
@@ -74,7 +75,7 @@ const List<String> suggestionTitle = [
 
 //* categories
 
-const List<String> categoriesImg =[
+const List<String> categoriesImg = [
   AppAssets.bicycleCate,
   AppAssets.buildingCate,
   AppAssets.carCate,
@@ -86,7 +87,7 @@ const List<String> categoriesImg =[
   AppAssets.weddingPlannerCate,
   AppAssets.worldHepatitisCate,
 ];
-const List<String> categoriesTitle =[
+const List<String> categoriesTitle = [
   AppString.bicycle,
   AppString.apartments,
   AppString.cars,
@@ -98,3 +99,29 @@ const List<String> categoriesTitle =[
   AppString.weddingPlanner,
   AppString.medicalTools,
 ];
+
+// product details
+
+const List<String> imgs = [
+  AppAssets.carImg,
+  AppAssets.carImg
+];
+
+const  productDetails = ProductDetailsModel(
+  images: imgs,
+  name: "BMW",
+  price: 1500,
+  place: "5 street Mansoura",
+  description:
+      "BMW is headquartered in Munich and produces motor vehicles ",
+  conditions:
+      "BMW is headquartered in Munich and produces motor vehicles ",
+);
+
+// seller
+const sellerDemo = SellerModel(
+  image: AppAssets.seller,
+  name: "Ahmed Arafat",
+  place: "Mansoura"
+);
+

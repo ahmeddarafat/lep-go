@@ -6,9 +6,9 @@ import '../../../app/apis_demo.dart';
 import '../constants/app_size.dart';
 import '../constants/app_strings.dart';
 
-class DefaultOfferCard extends StatelessWidget {
+class PublicOfferCard extends StatelessWidget {
   final int index;
-  const DefaultOfferCard({
+  const PublicOfferCard({
     super.key, required this.index,
   });
 

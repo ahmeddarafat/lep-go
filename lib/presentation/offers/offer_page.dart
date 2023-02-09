@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:lep_go/presentation/home/components.dart';
-import 'package:lep_go/app/apis_demo.dart';
 import 'package:sizer/sizer.dart';
 
+import '../../app/apis_demo.dart';
+import '../home/view/widgets/row_offers_cards.dart';
 import '../resources/constants/app_size.dart';
 import '../resources/constants/app_strings.dart';
-import '../resources/widgets/public_back_arrow.dart';
+import '../resources/widgets/back_arrow.dart';
+import '../resources/widgets/public_headline_row.dart';
 import '../resources/widgets/public_offer_card.dart';
 
 class OfferPage extends StatelessWidget {
@@ -36,7 +37,7 @@ class OfferPage extends StatelessWidget {
                 SizedBox(
                   height: AppSize.getHeight(8).h,
                 ),
-                const RowOfOffers(),
+                const RowOffersCards(),
                 SizedBox(
                   height: AppSize.getHeight(8).h,
                 ),
@@ -61,7 +62,7 @@ class OfferPage extends StatelessWidget {
                       onTap: () {
                         // todo: navigate to page of product offer
                       },
-                      child: DefaultOfferCard(
+                      child: PublicOfferCard(
                         index: index,
                       ),
                     );

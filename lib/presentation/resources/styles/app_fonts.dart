@@ -16,6 +16,9 @@ class AppFontWeight {
 }
 
 class AppFontSize {
+
+  // in case need equation
+  static double getFontSize(double fontsize)=> fontsize;
   static const double f12 = 12.0;
   static const double f14 = 14.0;
   static const double f16 = 16.0;

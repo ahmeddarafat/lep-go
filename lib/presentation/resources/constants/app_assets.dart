@@ -10,7 +10,6 @@ class AppAssets {
   static const String apartment ="${_baseImages}apartment.jpg";
   static const String carImg2 ="${_baseImages}car_img2.jpg";
   static const String bicycleImg ="${_baseImages}bicycle_img.jpg";
-  /// categories
   static const String carCate ="${_baseImages}car_cate.jpg";
   static const String bicycleCate ="${_baseImages}bicycle_cate.svg";
   static const String bicycleCate2 ="${_baseImages}bicycle_cate2.png";
@@ -22,6 +21,7 @@ class AppAssets {
   static const String smartHomeCate ="${_baseImages}smart_home_cate.svg";
   static const String weddingPlannerCate ="${_baseImages}wedding_planner_cate.svg";
   static const String worldHepatitisCate ="${_baseImages}world_hepatitis_cate.svg";
+  static const String seller ="${_baseImages}man.jpg";
 
 
   //* Icons

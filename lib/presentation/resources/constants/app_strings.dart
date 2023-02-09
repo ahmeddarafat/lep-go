@@ -45,5 +45,17 @@ class AppString {
 //* Products
   static const String products = "Products";
 
+//* Details
+  static const String details = "Details";
+  static const String productName = "Product Name";
+  static const String price = "Price";
+  static const String place = "Place";
+  static const String description = "Description";
+  static const String condition = "condition";
+  static const String forDay = " For Day";
+  static const String contactTheSeller = "Contact the seller";
+  static const String forMoreData = "For More Data";
+
+
 
 }

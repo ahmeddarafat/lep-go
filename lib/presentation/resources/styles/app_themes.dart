@@ -32,19 +32,21 @@ class AppTheme {
 
       //* text theme
       textTheme: TextTheme(
+        // base headline
         headlineSmall: AppStyle.getBold(
-          color: AppColors.blackBlue,
+          color: AppColors.black,
           fontSize: AppFontSize.f24,
         ),
-        // title of buttons
+        // text of buttons
         titleLarge: AppStyle.getBold(
           color: AppColors.white,
           fontSize: AppFontSize.f18,
         ),
         titleMedium: AppStyle.getBold(
-          color: AppColors.blackBrawn,
+          color: AppColors.grey3b,
           fontSize: AppFontSize.f16,
         ),
+        // base title
         titleSmall: AppStyle.getMedium(
           color: AppColors.lightGray,
           fontSize: AppFontSize.f14,

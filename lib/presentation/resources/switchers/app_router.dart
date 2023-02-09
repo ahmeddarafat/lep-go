@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:lep_go/presentation/categories/categories_page.dart';
-import 'package:lep_go/presentation/offers/offer_page.dart';
-import 'package:lep_go/presentation/products/products_page.dart';
-import 'package:lep_go/presentation/layouts/layouts_page.dart';
-import '../../home/home_page.dart';
+import '../../categories/categories_page.dart';
+import '../../confirmation_code/view/screen/confirmation_code_page.dart';
+import '../../offers/offer_page.dart';
+import '../../product_details/view/screen/product_details_page.dart';
+import '../../products/products_page.dart';
+import '../../layouts/layouts_page.dart';
+import '../../home/view/screen/home_page.dart';
 import '../../login/login_page.dart';
 
 import '../../register/register_page.dart';
@@ -18,6 +20,8 @@ class AppRoutes {
   static const String categories = "/categories";
   static const String offers = "/offers";
   static const String products = "/products";
+  static const String productDetails = "/product details";
+  static const String confirmCode = "/ConfirmationCode";
 }
 
 class RouteGenerate {
@@ -39,9 +43,19 @@ class RouteGenerate {
         return MaterialPageRoute(builder: (_) => const OfferPage());
       case AppRoutes.products:
         return MaterialPageRoute(builder: (_) => const ProductsPage());
+      case AppRoutes.productDetails:
+        return MaterialPageRoute(builder: (_) => const ProductDetails());
+      case AppRoutes.confirmCode:
+        return MaterialPageRoute(
+            builder: (_) => _confirmCodePage(routeSettings));
       default:
         return MaterialPageRoute(builder: (_) => _undfinedPage());
     }
+  }
+
+  static ConfirmationCodePage _confirmCodePage(RouteSettings routeSettings) {
+    final String email = routeSettings.arguments as String;
+    return ConfirmationCodePage(email: email);
   }
 
   static Scaffold _undfinedPage() {

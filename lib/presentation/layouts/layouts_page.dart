@@ -13,7 +13,7 @@ import '../favorite/favorite_page.dart';
 import '../notification/notification_page.dart';
 
 import '../../domain/cubit/bottom_navigation_bar/bottom_navigation_cubit.dart';
-import '../home/home_page.dart';
+import '../home/view/screen/home_page.dart';
 
 class LayoutsPage extends StatelessWidget {
   LayoutsPage({super.key});
