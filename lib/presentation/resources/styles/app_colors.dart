@@ -14,11 +14,11 @@ class AppColors {
   // textform fill color
   static const Color offWhite1 = Color(0xffF3F5FF);
   static const Color offWhite2 = Color(0xffF5F5F5);
-
   static const Color backgroundColor = Color(0xffF9F9FA);
   static const Color whithGray = Color(0xffDDDBDA);
   static const Color lightGray = Color(0xff666666);
   static const Color pink = Color(0xffE9D2BA);
+  static const Color backgroundMessage = Color(0xffFCF8F3);
 
   //* secondary colors
   static const Color white = Color(0xffffffff); // background

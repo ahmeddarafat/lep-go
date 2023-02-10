@@ -11,6 +11,9 @@ class AppTheme {
       //* main colors
       primaryColor: AppColors.orange,
       splashColor: AppColors.orange,
+      colorScheme: const ColorScheme.light(
+        primary: AppColors.orange,
+      ),
       scaffoldBackgroundColor: AppColors.white,
 
       //* AppBar theme
@@ -67,7 +70,6 @@ class AppTheme {
           color: AppColors.red,
           fontSize: AppFontSize.f16,
         ),
-        
       ),
     );
   }

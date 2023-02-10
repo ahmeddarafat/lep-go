@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import '../../../resources/styles/app_colors.dart';
+import '../../../resources/styles/app_fonts.dart';
 import '../../../resources/switchers/app_router.dart';
 import 'package:sizer/sizer.dart';
 
@@ -34,7 +37,7 @@ class _HomePageState extends State<HomePage> {
     super.initState();
     _searchContorller = TextEditingController();
   }
-  
+
   @override
   void dispose() {
     _searchContorller.dispose();
@@ -45,39 +48,59 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: AppSize.getWidth(16).w),
-      child: SingleChildScrollView(
-        child: Column(
-          children: [
-            SizedBox(height: AppSize.getHeight(8).h),
-            DefaultTextFormField(
-              hint: AppString.search,
-              showprefixIcon: true,
-              prefixIcon: Icons.search,
-              borderRadius: 12.0,
-              controller: _searchContorller,
-              validator: (_) => null,
+      child: Scaffold(
+        appBar: AppBar(
+          titleSpacing: AppSize.getWidth(80).w,
+          title: RichText(
+              text: const TextSpan(
+                  style: TextStyle(fontSize: AppFontSize.f32),
+                  children: [
+                TextSpan(
+                    text: "Lep", style: TextStyle(color: AppColors.blackBlue)),
+                TextSpan(text: "Go", style: TextStyle(color: AppColors.orange)),
+              ])),
+          leadingWidth: AppSize.getWidth(30).w,
+          leading: SvgPicture.asset(AppAssets.groups),
+          actions: const [
+            CircleAvatar(
+              backgroundImage: AssetImage(AppAssets.seller),
             ),
-            SizedBox(height: AppSize.getHeight(8).h),
-            HeadLineRow(
-              title: AppString.types,
-              onTap: () => Navigator.pushNamed(context, AppRoutes.categories),
-            ),
-            SizedBox(height: AppSize.getHeight(8).h),
-            const RowCategories(),
-            SizedBox(height: AppSize.getHeight(8).h),
-            HeadLineRow(
-              title: AppString.offers,
-              onTap: () => Navigator.pushNamed(context, AppRoutes.offers),
-            ),
-            const RowOffersCards(),
-            SizedBox(height: AppSize.getHeight(8).h),
-            const HeadLineRow(
-              title: AppString.suggestionForYou,
-              showAllWord: false,
-            ),
-            SizedBox(height: AppSize.getHeight(8).h),
-            const ProductsCards(),
           ],
+        ),
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              SizedBox(height: AppSize.getHeight(8).h),
+              DefaultTextFormField(
+                hint: AppString.search,
+                showprefixIcon: true,
+                prefixIcon: Icons.search,
+                borderRadius: 12.0,
+                controller: _searchContorller,
+                validator: (_) => null,
+              ),
+              SizedBox(height: AppSize.getHeight(8).h),
+              HeadLineRow(
+                title: AppString.types,
+                onTap: () => Navigator.pushNamed(context, AppRoutes.categories),
+              ),
+              SizedBox(height: AppSize.getHeight(8).h),
+              const RowCategories(),
+              SizedBox(height: AppSize.getHeight(8).h),
+              HeadLineRow(
+                title: AppString.offers,
+                onTap: () => Navigator.pushNamed(context, AppRoutes.offers),
+              ),
+              const RowOffersCards(),
+              SizedBox(height: AppSize.getHeight(8).h),
+              const HeadLineRow(
+                title: AppString.suggestionForYou,
+                showAllWord: false,
+              ),
+              SizedBox(height: AppSize.getHeight(8).h),
+              const ProductsCards(),
+            ],
+          ),
         ),
       ),
     );

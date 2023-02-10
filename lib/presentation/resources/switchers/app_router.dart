@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:lep_go/presentation/chat/screens/chat_page.dart';
+import 'package:lep_go/presentation/chat/screens/chats_page.dart';
 import '../../categories/categories_page.dart';
 import '../../confirmation_code/view/screen/confirmation_code_page.dart';
 import '../../offers/offer_page.dart';
@@ -13,6 +15,8 @@ import '../../splash/splash_page.dart';
 
 class AppRoutes {
   static const String splash = "/";
+  static const String chat = "/chat";
+  static const String chats = "/chats";
   static const String home = "/home";
   static const String login = "/login";
   static const String register = "/register";
@@ -45,6 +49,10 @@ class RouteGenerate {
         return MaterialPageRoute(builder: (_) => const ProductsPage());
       case AppRoutes.productDetails:
         return MaterialPageRoute(builder: (_) => const ProductDetails());
+      case AppRoutes.chat:
+        return MaterialPageRoute(builder: (_) => const ChatPage());
+      case AppRoutes.chats:
+        return MaterialPageRoute(builder: (_) => const ChatsPage());
       case AppRoutes.confirmCode:
         return MaterialPageRoute(
             builder: (_) => _confirmCodePage(routeSettings));

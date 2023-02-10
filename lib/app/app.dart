@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:lep_go/domain/cubit/messages/messages_cubit.dart';
 import '../domain/cubit/bottom_navigation_bar/bottom_navigation_cubit.dart';
 import '../presentation/resources/styles/app_themes.dart';
 import '../presentation/resources/switchers/app_router.dart';
@@ -19,8 +20,11 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return Sizer(builder:
         (BuildContext context, Orientation orientation, DeviceType deviceType) {
-      return BlocProvider(
-        create: (_) => BottomNavigationCubit(),
+      return MultiBlocProvider(
+        providers: [
+          BlocProvider(create: (_) => BottomNavigationCubit(),),
+          BlocProvider(create: (_) => MessagesCubit(),)
+        ],
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
           onGenerateRoute: RouteGenerate.getRoute,

@@ -113,9 +113,9 @@ const  productDetails = ProductDetailsModel(
   price: 1500,
   place: "5 street Mansoura",
   description:
-      "BMW is headquartered in Munich and produces motor vehicles ",
+      "BMW is the best car in Munich and produces motor vehicles ",
   conditions:
-      "BMW is headquartered in Munich and produces motor vehicles ",
+      "BMW is the best car in Munich and produces motor vehicles ",
 );
 
 // seller
@@ -124,4 +124,5 @@ const sellerDemo = SellerModel(
   name: "Ahmed Arafat",
   place: "Mansoura"
 );
+
 

@@ -38,6 +38,7 @@ class AppText extends StatelessWidget {
         fontWeight: fw ?? AppFontWeight.regular,
         decoration:
             under == true ? TextDecoration.underline : TextDecoration.none,
+        overflow: TextOverflow.ellipsis
       ),
     );
   }

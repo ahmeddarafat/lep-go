@@ -4,16 +4,19 @@ import 'package:sizer/sizer.dart';
 import 'app_fonts.dart';
 
 class AppStyle {
-
   static TextStyle headline = getBold(color: AppColors.black, fontSize: 22.sp);
-  static TextStyle headlineOrange = getBold(color: AppColors.orange, fontSize: 18.sp);
+  static TextStyle headlineOrange =
+      getBold(color: AppColors.orange, fontSize: 18.sp);
   static TextStyle title = getBold(color: AppColors.grey3b, fontSize: 18.sp);
-  static TextStyle bodyTitle = getMedium(color: AppColors.lightGray, fontSize: 14.sp);
-  static TextStyle bodySubTitle = getMedium(color: AppColors.black, fontSize: 12.sp);
+  static TextStyle bodyTitle =
+      getMedium(color: AppColors.lightGray, fontSize: 14.sp);
+  static TextStyle bodySubTitle =
+      getMedium(color: AppColors.black, fontSize: 12.sp);
   static TextStyle subTitle =
-      getRegular(color: AppColors.lightGray, fontSize: 14);
-  static TextStyle textButton = getRegular(color: AppColors.orange,fontSize: 14);
-
+      getRegular(color: AppColors.lightGray, fontSize: 14.sp);
+  static TextStyle textButton =
+      getRegular(color: AppColors.orange, fontSize: 14.sp);
+  static TextStyle chatText = getRegular(color: AppColors.grey3b, fontSize: 11.sp);
 
   //* light
   static TextStyle getLight({

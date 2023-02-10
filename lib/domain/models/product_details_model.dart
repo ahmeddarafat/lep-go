@@ -5,6 +5,7 @@ class ProductDetailsModel {
   final String place;
   final String description;
   final String conditions;
+  final int rate;
 
   const ProductDetailsModel({
     required this.images,
@@ -13,5 +14,6 @@ class ProductDetailsModel {
     required this.place,
     required this.description,
     required this.conditions,
+    this.rate = 4
   });
 }
