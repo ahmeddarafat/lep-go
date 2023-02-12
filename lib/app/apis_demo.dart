@@ -1,3 +1,4 @@
+import '../domain/models/notification_model.dart';
 import '../domain/models/product_details_model.dart';
 import '../domain/models/seller_model.dart';
 import '../presentation/resources/constants/app_assets.dart';
@@ -102,27 +103,22 @@ const List<String> categoriesTitle = [
 
 // product details
 
-const List<String> imgs = [
-  AppAssets.carImg,
-  AppAssets.carImg
-];
+const List<String> imgs = [AppAssets.carImg, AppAssets.carImg];
 
-const  productDetails = ProductDetailsModel(
+const productDetails = ProductDetailsModel(
   images: imgs,
   name: "BMW",
   price: 1500,
   place: "5 street Mansoura",
-  description:
-      "BMW is the best car in Munich and produces motor vehicles ",
-  conditions:
-      "BMW is the best car in Munich and produces motor vehicles ",
+  description: "BMW is the best car in Munich and produces motor vehicles ",
+  conditions: "BMW is the best car in Munich and produces motor vehicles ",
 );
 
 // seller
 const sellerDemo = SellerModel(
-  image: AppAssets.seller,
-  name: "Ahmed Arafat",
-  place: "Mansoura"
-);
+    image: AppAssets.seller, name: "Ahmed Arafat", place: "Mansoura");
 
-
+const notifiDemo = NotificationModel(
+    title: "Thank you for rating the app",
+    body:
+        "Hello dear customer, do you want to extend the reservation period and dear customer, do you want to extend the reservation period?");

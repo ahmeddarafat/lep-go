@@ -58,7 +58,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       style: Theme.of(context).textTheme.headlineSmall,
                     ),
                     SizedBox(height: AppSize.getHeight(32).h),
-                    DefaultTextFormField(
+                    PublicTextFormField(
                       hint: AppString.nameHint,
                       showprefixIcon: true,
                       prefixIcon: Icons.person,
@@ -69,7 +69,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       },
                     ),
                     SizedBox(height: AppSize.getHeight(16).h),
-                    DefaultTextFormField(
+                    PublicTextFormField(
                       hint: AppString.phoneHint,
                       showprefixIcon: true,
                       prefixIcon: Icons.phone,
@@ -80,7 +80,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       },
                     ),
                     SizedBox(height: AppSize.getHeight(16).h),
-                    DefaultTextFormField(
+                    PublicTextFormField(
                       hint: AppString.emailAddressHint,
                       showprefixIcon: true,
                       prefixIcon: Icons.email_outlined,
@@ -91,7 +91,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       },
                     ),
                     SizedBox(height: AppSize.getHeight(16).h),
-                    DefaultTextFormField(
+                    PublicTextFormField(
                       hint: AppString.passwordHint,
                       showprefixIcon: true,
                       prefixIcon: Icons.lock,

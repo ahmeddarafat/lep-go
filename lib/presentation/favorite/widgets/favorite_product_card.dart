@@ -50,7 +50,6 @@ class FavoriteProductCard extends StatelessWidget {
                   size: 18.sp,
                   fw: FontWeight.bold,
                 ),
-                // SizedBox(height: AppSize.getHeight(7).h),
                 Row(
                   children: [
                     Icon(

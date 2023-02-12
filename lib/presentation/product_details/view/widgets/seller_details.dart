@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lep_go/presentation/resources/switchers/app_router.dart';
 import 'package:sizer/sizer.dart';
 
 import '../../../../domain/models/seller_model.dart';
@@ -18,10 +19,13 @@ class SellerDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        CircleAvatar(
-          radius: AppSize.getWidth(30).w,
-          backgroundImage: AssetImage(
-            seller.image,
+        InkWell(
+          onTap: () => Navigator.pushNamed(context, AppRoutes.sellerProfile),
+          child: CircleAvatar(
+            radius: AppSize.getWidth(30).w,
+            backgroundImage: AssetImage(
+              seller.image,
+            ),
           ),
         ),
         const SizedBox(
@@ -29,8 +33,7 @@ class SellerDetails extends StatelessWidget {
         ),
         Container(
           width: 60.w,
-          padding: const EdgeInsets.symmetric(
-              horizontal: 12, vertical: 2),
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 2),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(32),
             border: Border.all(color: AppColors.orange),

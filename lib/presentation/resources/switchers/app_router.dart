@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lep_go/presentation/chat/screens/chat_page.dart';
 import 'package:lep_go/presentation/chat/screens/chats_page.dart';
+import 'package:lep_go/presentation/seller_profile/screen/seller_profile.dart';
 import '../../categories/categories_page.dart';
 import '../../confirmation_code/view/screen/confirmation_code_page.dart';
 import '../../offers/offer_page.dart';
@@ -25,7 +26,8 @@ class AppRoutes {
   static const String offers = "/offers";
   static const String products = "/products";
   static const String productDetails = "/product details";
-  static const String confirmCode = "/ConfirmationCode";
+  static const String confirmCode = "/Confirmation Code";
+  static const String sellerProfile = "/Seller Profile";
 }
 
 class RouteGenerate {
@@ -53,6 +55,8 @@ class RouteGenerate {
         return MaterialPageRoute(builder: (_) => const ChatPage());
       case AppRoutes.chats:
         return MaterialPageRoute(builder: (_) => const ChatsPage());
+      case AppRoutes.sellerProfile:
+        return MaterialPageRoute(builder: (_) => const SellerProfile());
       case AppRoutes.confirmCode:
         return MaterialPageRoute(
             builder: (_) => _confirmCodePage(routeSettings));

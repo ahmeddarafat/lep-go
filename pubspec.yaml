@@ -28,15 +28,17 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  flutter:
-    sdk: flutter
   bloc: ^8.1.1
-  flutter_bloc: ^8.1.1
   carousel_slider: ^4.2.1
   cupertino_icons: ^1.0.2
   curved_navigation_bar: ^1.0.3
+  dropdown_button2: ^1.9.2
   equatable: ^2.0.5
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.1
   flutter_svg: ^2.0.0+1
+  image_picker: ^0.8.6+1
   pin_code_fields: ^7.4.0
   sizer: ^2.0.15
 

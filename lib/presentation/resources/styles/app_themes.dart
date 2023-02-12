@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:sizer/sizer.dart';
 
 import 'app_colors.dart';
 import 'app_fonts.dart';
@@ -50,9 +51,9 @@ class AppTheme {
           fontSize: AppFontSize.f16,
         ),
         // base title
-        titleSmall: AppStyle.getMedium(
+        titleSmall: AppStyle.getRegular(
           color: AppColors.lightGray,
-          fontSize: AppFontSize.f14,
+          fontSize: 12.sp,
         ),
         labelLarge: AppStyle.getRegular(
           color: AppColors.orange,

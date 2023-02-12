@@ -22,6 +22,7 @@ class AppAssets {
   static const String weddingPlannerCate ="${_baseImages}wedding_planner_cate.svg";
   static const String worldHepatitisCate ="${_baseImages}world_hepatitis_cate.svg";
   static const String seller ="${_baseImages}man.jpg";
+  static const String uploadImg ="${_baseImages}upload_img.svg";
 
 
   //* Icons
@@ -45,4 +46,6 @@ class AppAssets {
   static const String homeFilled ="${_baseIcons}home_filled.svg";
   static const String tag ="${_baseIcons}tag.svg";
   static const String star ="${_baseIcons}star.svg";
+  static const String locationPin ="${_baseIcons}location_pin.svg";
+  static const String addPhoto ="${_baseIcons}add_photo_alternate.svg";
 }

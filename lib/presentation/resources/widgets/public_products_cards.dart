@@ -16,11 +16,11 @@ class ProductsCards extends StatelessWidget {
     return GridView.builder(
       shrinkWrap: true,
       physics: const BouncingScrollPhysics(),
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+      gridDelegate:  SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           crossAxisSpacing: 16,
-          mainAxisSpacing: 8,
-          childAspectRatio: 0.9),
+          mainAxisSpacing: AppSize.getHeight(28).h,
+          childAspectRatio: 0.85),
       itemCount: suggestionImg.length,
       itemBuilder: (BuildContext context, int index) {
         return ProductCard(index: index);

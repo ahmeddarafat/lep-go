@@ -4,7 +4,7 @@ import 'package:sizer/sizer.dart';
 import 'app_fonts.dart';
 
 class AppStyle {
-  static TextStyle headline = getBold(color: AppColors.black, fontSize: 22.sp);
+  static TextStyle headline = getBold(color: AppColors.black, fontSize: 20.sp);
   static TextStyle headlineOrange =
       getBold(color: AppColors.orange, fontSize: 18.sp);
   static TextStyle title = getBold(color: AppColors.grey3b, fontSize: 18.sp);

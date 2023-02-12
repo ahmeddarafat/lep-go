@@ -56,6 +56,10 @@ class AppString {
   static const String contactTheSeller = "Contact the seller";
   static const String forMoreData = "For More Data";
 
+  //* Add Product
+  static const String addProduct = "Add Product";
+
+
 
 
 }

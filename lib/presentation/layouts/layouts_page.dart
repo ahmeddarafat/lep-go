@@ -11,7 +11,7 @@ import '../resources/styles/app_fonts.dart';
 import '../add_product/add_product_page.dart';
 import '../chat/screens/chat_page.dart';
 import '../favorite/screen/favorite_page.dart';
-import '../notification/notification_page.dart';
+import '../notification/screen/notification_page.dart';
 
 import '../../domain/cubit/bottom_navigation_bar/bottom_navigation_cubit.dart';
 import '../home/view/screen/home_page.dart';

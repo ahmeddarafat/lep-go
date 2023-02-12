@@ -52,18 +52,23 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           titleSpacing: AppSize.getWidth(80).w,
           title: RichText(
-              text: const TextSpan(
-                  style: TextStyle(fontSize: AppFontSize.f32),
-                  children: [
+            text: const TextSpan(
+              style: TextStyle(fontSize: AppFontSize.f32),
+              children: [
                 TextSpan(
                     text: "Lep", style: TextStyle(color: AppColors.blackBlue)),
                 TextSpan(text: "Go", style: TextStyle(color: AppColors.orange)),
-              ])),
+              ],
+            ),
+          ),
           leadingWidth: AppSize.getWidth(30).w,
           leading: SvgPicture.asset(AppAssets.groups),
-          actions: const [
-            CircleAvatar(
-              backgroundImage: AssetImage(AppAssets.seller),
+          actions:  [
+            InkWell(
+              onTap: ()=>Navigator.pushNamed(context,AppRoutes.home),
+              child: const CircleAvatar(
+                backgroundImage: AssetImage(AppAssets.seller),
+              ),
             ),
           ],
         ),
@@ -71,7 +76,7 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             children: [
               SizedBox(height: AppSize.getHeight(8).h),
-              DefaultTextFormField(
+              PublicTextFormField(
                 hint: AppString.search,
                 showprefixIcon: true,
                 prefixIcon: Icons.search,

@@ -49,7 +49,7 @@ class _ProductsPageState extends State<ProductsPage> {
                 SizedBox(
                   height: AppSize.getHeight(8).h,
                 ),
-                DefaultTextFormField(
+                PublicTextFormField(
                   hint: AppString.search,
                   showprefixIcon: true,
                   prefixIcon: Icons.search,

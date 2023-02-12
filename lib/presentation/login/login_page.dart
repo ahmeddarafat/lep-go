@@ -55,7 +55,7 @@ class _LoginPageState extends State<LoginPage> {
                     style: Theme.of(context).textTheme.titleSmall,
                   ),
                   SizedBox(height: AppSize.getHeight(32).h),
-                  DefaultTextFormField(
+                  PublicTextFormField(
                     hint: AppString.emailAddressHint,
                      showprefixIcon: true,
                     prefixIcon: Icons.email_outlined,
@@ -66,7 +66,7 @@ class _LoginPageState extends State<LoginPage> {
                     },
                   ),
                   SizedBox(height: AppSize.getHeight(24).h),
-                  DefaultTextFormField(
+                  PublicTextFormField(
                     hint: AppString.passwordHint,
                     showprefixIcon: true,
                     prefixIcon: Icons.lock,

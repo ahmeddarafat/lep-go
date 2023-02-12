@@ -9,14 +9,18 @@ class PublicButton extends StatelessWidget {
   final void Function()? onPressed;
   final double width;
   final double borderRadius;
+  final Widget? titleWidget;
+  final bool useTitleWidget;
 
-  const PublicButton({
-    Key? key,
-    required this.title,
-    required this.onPressed,
-    this.width = double.infinity,
-    this.borderRadius = 24,
-  }) : super(key: key);
+  const PublicButton(
+      {Key? key,
+      required this.title,
+      required this.onPressed,
+      this.width = double.infinity,
+      this.borderRadius = 24,
+      this.titleWidget,
+      this.useTitleWidget = false})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,12 +30,14 @@ class PublicButton extends StatelessWidget {
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.orange,
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(borderRadius)),
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(borderRadius)),
         ),
         child: Padding(
           padding: EdgeInsets.symmetric(vertical: AppSize.getHeight(12).h),
-          child: Text(title, style: Theme.of(context).textTheme.titleLarge),
+          child: useTitleWidget
+              ? titleWidget
+              : Text(title, style: Theme.of(context).textTheme.titleLarge),
         ),
       ),
     );
