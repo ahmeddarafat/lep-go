@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lep_go/presentation/chat/screens/chat_page.dart';
 import 'package:lep_go/presentation/chat/screens/chats_page.dart';
+import 'package:lep_go/presentation/profile/screen/profile_page.dart';
+import 'package:lep_go/presentation/profile_settings/screen/profile_settings_page.dart';
 import 'package:lep_go/presentation/seller_profile/screen/seller_profile.dart';
 import '../../categories/categories_page.dart';
 import '../../confirmation_code/view/screen/confirmation_code_page.dart';
@@ -28,6 +30,8 @@ class AppRoutes {
   static const String productDetails = "/product details";
   static const String confirmCode = "/Confirmation Code";
   static const String sellerProfile = "/Seller Profile";
+  static const String profile = "/Profile";
+  static const String profileSettings = "/Profile Settings";
 }
 
 class RouteGenerate {
@@ -57,6 +61,10 @@ class RouteGenerate {
         return MaterialPageRoute(builder: (_) => const ChatsPage());
       case AppRoutes.sellerProfile:
         return MaterialPageRoute(builder: (_) => const SellerProfile());
+      case AppRoutes.profile:
+        return MaterialPageRoute(builder: (_) => const ProfilePage());
+      case AppRoutes.profileSettings:
+        return MaterialPageRoute(builder: (_) => const ProfileSettingPage());
       case AppRoutes.confirmCode:
         return MaterialPageRoute(
             builder: (_) => _confirmCodePage(routeSettings));

@@ -5,7 +5,7 @@ import '../../app/apis_demo.dart';
 import '../home/view/widgets/row_offers_cards.dart';
 import '../resources/constants/app_size.dart';
 import '../resources/constants/app_strings.dart';
-import '../resources/widgets/back_arrow.dart';
+import '../resources/widgets/public_back_arrow.dart';
 import '../resources/widgets/public_headline_row.dart';
 import '../resources/widgets/public_offer_card.dart';
 

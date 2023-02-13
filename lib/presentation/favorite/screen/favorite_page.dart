@@ -6,7 +6,7 @@ import 'package:sizer/sizer.dart';
 
 import '../../resources/styles/app_colors.dart';
 import '../../resources/styles/app_style.dart';
-import '../widgets/favorite_product_card.dart';
+import '../../resources/widgets/public_product_card.dart';
 
 class FavoritePage extends StatelessWidget {
   const FavoritePage({super.key});
@@ -26,7 +26,7 @@ class FavoritePage extends StatelessWidget {
         child: ListView.separated(
           itemCount: 5,
           itemBuilder: (_, index) {
-            return const FavoriteProductCard();
+            return const PublicProductCard();
           },
           separatorBuilder: (_, index) {
             return SizedBox(

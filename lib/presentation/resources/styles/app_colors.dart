@@ -11,12 +11,12 @@ class AppColors {
   static const Color blackBlue = Color(0xff08324B);
   static const Color darkSlateGray = Color(0xff263238);
   static const Color grey3b = Color(0xff3B3B3B);
+  static const Color graydd = Color(0xffDDDBDA);
   // textform fill color
   static const Color offWhite1 = Color(0xffF3F5FF);
   static const Color offWhite2 = Color(0xffF5F5F5);
   static const Color backgroundColor = Color(0xffF9F9FA);
-  static const Color whithGray = Color(0xffDDDBDA);
-  static const Color lightGray = Color(0xff666666);
+  static const Color gray66 = Color(0xff666666);
   static const Color pink = Color(0xffE9D2BA);
   static const Color backgroundMessage = Color(0xffFCF8F3);
 

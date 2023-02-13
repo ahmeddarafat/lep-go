@@ -5,7 +5,7 @@ import 'package:sizer/sizer.dart';
 import '../resources/constants/app_size.dart';
 import '../resources/constants/app_strings.dart';
 import '../resources/styles/app_colors.dart';
-import '../resources/widgets/back_arrow.dart';
+import '../resources/widgets/public_back_arrow.dart';
 
 class CategoriesPage extends StatelessWidget {
   const CategoriesPage({super.key});

@@ -52,7 +52,7 @@ class AppTheme {
         ),
         // base title
         titleSmall: AppStyle.getRegular(
-          color: AppColors.lightGray,
+          color: AppColors.gray66,
           fontSize: 12.sp,
         ),
         labelLarge: AppStyle.getRegular(
@@ -60,7 +60,7 @@ class AppTheme {
           fontSize: AppFontSize.f14,
         ),
         labelMedium: AppStyle.getRegular(
-          color: AppColors.lightGray,
+          color: AppColors.gray66,
           fontSize: AppFontSize.f12,
         ),
         bodyLarge: AppStyle.getRegular(

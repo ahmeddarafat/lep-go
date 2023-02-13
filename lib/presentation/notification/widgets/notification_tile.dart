@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lep_go/presentation/resources/constants/app_size.dart';
 import 'package:lep_go/presentation/resources/styles/app_colors.dart';
-import 'package:lep_go/presentation/resources/widgets/app_text.dart';
+import 'package:lep_go/presentation/resources/widgets/public_text.dart';
 import 'package:sizer/sizer.dart';
 
 class NotificationTile extends StatelessWidget {
@@ -26,7 +26,7 @@ class NotificationTile extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          AppText(
+          PublicText(
             txt: title,
             color: AppColors.black,
             size: 12.sp,
@@ -35,9 +35,9 @@ class NotificationTile extends StatelessWidget {
           ),
           SizedBox(
             width: AppSize.getWidth(220).w,
-            child: AppText(
+            child: PublicText(
               txt: body,
-              color: AppColors.lightGray,
+              color: AppColors.gray66,
               size: 10.sp,
               max: 1,
             ),

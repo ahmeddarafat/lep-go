@@ -7,7 +7,7 @@ import '../../../domain/models/seller_model.dart';
 import '../../resources/constants/app_size.dart';
 import '../../resources/styles/app_colors.dart';
 import '../../resources/styles/app_style.dart';
-import '../../resources/widgets/back_arrow.dart';
+import '../../resources/widgets/public_back_arrow.dart';
 
 class MessagesList extends StatelessWidget {
   const MessagesList({

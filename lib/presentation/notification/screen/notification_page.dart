@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lep_go/app/apis_demo.dart';
-import 'package:lep_go/presentation/resources/constants/app_size.dart';
-import 'package:lep_go/presentation/resources/styles/app_colors.dart';
-import 'package:sizer/sizer.dart';
 
 import '../../resources/styles/app_style.dart';
-import '../../resources/widgets/app_text.dart';
 import '../widgets/notification_tile.dart';
 
 class NotificationPage extends StatelessWidget {

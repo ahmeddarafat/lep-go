@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../resources/styles/app_style.dart';
 import '../../../resources/switchers/app_router.dart';
-import '../../../resources/widgets/back_arrow.dart';
+import '../../../resources/widgets/public_back_arrow.dart';
 import '../../../resources/widgets/public_button.dart';
 import 'package:sizer/sizer.dart';
 

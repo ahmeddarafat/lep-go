@@ -7,7 +7,7 @@ import '../../../domain/models/seller_model.dart';
 import '../../resources/constants/app_size.dart';
 import '../../resources/styles/app_colors.dart';
 import '../../resources/styles/app_style.dart';
-import '../../resources/widgets/back_arrow.dart';
+import '../../resources/widgets/public_back_arrow.dart';
 
 class BottomRowChat extends StatelessWidget {
   const BottomRowChat({
@@ -30,7 +30,7 @@ class BottomRowChat extends StatelessWidget {
                 hintText: 'Write your message here...',
                 hintStyle: AppStyle.chatText,
                 filled: false,
-                fillColor: AppColors.whithGray,
+                fillColor: AppColors.graydd,
                 prefixIcon: const Icon(Icons.emoji_emotions_outlined),
                 suffixIcon: const Icon(Icons.camera_alt),
                 contentPadding: EdgeInsets.symmetric(
@@ -38,11 +38,11 @@ class BottomRowChat extends StatelessWidget {
                   vertical: AppSize.getHeight(17).h,
                 ),
                 enabledBorder: OutlineInputBorder(
-                  borderSide: const BorderSide(color: AppColors.whithGray),
+                  borderSide: const BorderSide(color: AppColors.graydd),
                   borderRadius: BorderRadius.circular(50),
                 ),
                 focusedBorder: OutlineInputBorder(
-                  borderSide: const BorderSide(color: AppColors.whithGray),
+                  borderSide: const BorderSide(color: AppColors.graydd),
                   borderRadius: BorderRadius.circular(50),
                 ),
               ),

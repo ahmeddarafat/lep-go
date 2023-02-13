@@ -46,7 +46,7 @@ class ChatItem extends StatelessWidget {
                         Text(
                           '6:50Am',
                           style: TextStyle(
-                              color: AppColors.lightGray, fontSize: 12.sp),
+                              color: AppColors.gray66, fontSize: 12.sp),
                         )
                       ],
                     ),
@@ -56,7 +56,7 @@ class ChatItem extends StatelessWidget {
                         'Hello dear customer, do you want to continue',
                         style: TextStyle(
                           fontSize: 10.sp,
-                          color: AppColors.lightGray,
+                          color: AppColors.gray66,
                         ),
                         overflow: TextOverflow.ellipsis,
                       ),

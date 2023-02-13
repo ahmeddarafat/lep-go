@@ -10,7 +10,7 @@ import 'package:lep_go/presentation/resources/widgets/public_button.dart';
 import 'package:sizer/sizer.dart';
 
 import '../../../../domain/models/seller_model.dart';
-import '../../../resources/widgets/back_arrow.dart';
+import '../../../resources/widgets/public_back_arrow.dart';
 import '../widgets/image_slider.dart';
 import '../widgets/product_data_column.dart';
 import '../widgets/product_label_column.dart';

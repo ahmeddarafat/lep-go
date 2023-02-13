@@ -20,7 +20,7 @@ class TextContainer extends StatelessWidget {
       width: AppSize.getWidth(200).w,
       height: AppSize.getHeight(83).h,
       decoration: BoxDecoration(
-        color: AppColors.whithGray.withOpacity(0.2),
+        color: AppColors.graydd.withOpacity(0.2),
         borderRadius: BorderRadius.circular(5),
         border: Border.all(color: Colors.grey),
       ),

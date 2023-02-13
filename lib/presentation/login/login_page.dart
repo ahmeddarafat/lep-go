@@ -180,7 +180,7 @@ class DefaultDivider extends StatelessWidget {
     return Container(
       height: 1,
       width: 100,
-      color: AppColors.lightGray.withOpacity(0.4),
+      color: AppColors.gray66.withOpacity(0.4),
     );
   }
 }

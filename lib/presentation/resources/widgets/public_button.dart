@@ -14,7 +14,7 @@ class PublicButton extends StatelessWidget {
 
   const PublicButton(
       {Key? key,
-      required this.title,
+      this.title = "",
       required this.onPressed,
       this.width = double.infinity,
       this.borderRadius = 24,

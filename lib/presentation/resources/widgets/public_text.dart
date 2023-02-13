@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../styles/app_fonts.dart';
 
 
-class AppText extends StatelessWidget {
+class PublicText extends StatelessWidget {
   final String txt;
   final String? ff;
   final bool? under;
@@ -12,7 +12,7 @@ class AppText extends StatelessWidget {
   final FontWeight? fw;
   final TextAlign? align;
 
-  const AppText({
+  const PublicText({
     super.key,
     required this.txt,
     required this.color,

@@ -4,12 +4,16 @@ import 'package:lep_go/presentation/resources/constants/app_size.dart';
 import 'package:lep_go/presentation/resources/constants/app_strings.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../resources/styles/app_colors.dart';
-import '../../resources/widgets/app_text.dart';
+import '../styles/app_colors.dart';
+import 'public_text.dart';
 
-class FavoriteProductCard extends StatelessWidget {
-  const FavoriteProductCard({
+class PublicProductCard extends StatelessWidget {
+  final bool showFavorite;
+  final Color backgroundColor;
+  const PublicProductCard({
     super.key,
+    this.showFavorite = true,
+    this.backgroundColor = AppColors.backgroundColor,
   });
 
   @override
@@ -17,7 +21,7 @@ class FavoriteProductCard extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(AppSize.getWidth(8).w),
       decoration: BoxDecoration(
-        color: AppColors.backgroundColor,
+        color: backgroundColor,
         borderRadius: BorderRadius.circular(6),
       ),
       child: IntrinsicHeight(
@@ -27,8 +31,8 @@ class FavoriteProductCard extends StatelessWidget {
             Align(
               alignment: Alignment.center,
               child: Container(
-                width: AppSize.getWidth(100).w,
-                height: AppSize.getHeight(100).h,
+                width: AppSize.getWidth(110).w,
+                height: AppSize.getHeight(130).h,
                 clipBehavior: Clip.antiAlias,
                 decoration: BoxDecoration(
                   color: AppColors.backgroundColor,
@@ -44,7 +48,7 @@ class FavoriteProductCard extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                AppText(
+                PublicText(
                   txt: productDetails.name,
                   color: AppColors.black,
                   size: 18.sp,
@@ -55,11 +59,11 @@ class FavoriteProductCard extends StatelessWidget {
                     Icon(
                       Icons.pin_drop,
                       size: 14.sp,
-                      color: AppColors.lightGray,
+                      color: AppColors.gray66,
                     ),
-                    AppText(
+                    PublicText(
                       txt: productDetails.place,
-                      color: AppColors.lightGray,
+                      color: AppColors.gray66,
                       size: 12.sp,
                     )
                   ],
@@ -74,9 +78,9 @@ class FavoriteProductCard extends StatelessWidget {
                 ]),
                 SizedBox(
                   width: AppSize.getWidth(118).w,
-                  child: AppText(
+                  child: PublicText(
                     txt: productDetails.description,
-                    color: AppColors.lightGray,
+                    color: AppColors.gray66,
                     size: 12.sp,
                     align: TextAlign.start,
                   ),
@@ -88,12 +92,12 @@ class FavoriteProductCard extends StatelessWidget {
                       color: Colors.red,
                       size: 13.sp,
                     ),
-                    AppText(
+                    PublicText(
                       txt: productDetails.price.toString(),
                       color: AppColors.black,
                       size: 12.sp,
                     ),
-                    AppText(
+                    PublicText(
                       txt: AppString.forDay,
                       color: AppColors.orange,
                       size: 12.sp,
@@ -103,10 +107,12 @@ class FavoriteProductCard extends StatelessWidget {
               ],
             ),
             const Spacer(),
-            const Icon(
-              Icons.favorite_rounded,
-              color: Colors.red,
-            )
+            showFavorite
+                ? const Icon(
+                    Icons.favorite_rounded,
+                    color: Colors.red,
+                  )
+                : const SizedBox(),
           ],
         ),
       ),

@@ -63,9 +63,9 @@ class _HomePageState extends State<HomePage> {
           ),
           leadingWidth: AppSize.getWidth(30).w,
           leading: SvgPicture.asset(AppAssets.groups),
-          actions:  [
+          actions: [
             InkWell(
-              onTap: ()=>Navigator.pushNamed(context,AppRoutes.home),
+              onTap: () => Navigator.pushNamed(context, AppRoutes.profile),
               child: const CircleAvatar(
                 backgroundImage: AssetImage(AppAssets.seller),
               ),

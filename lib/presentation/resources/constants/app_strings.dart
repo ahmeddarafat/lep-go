@@ -59,6 +59,26 @@ class AppString {
   //* Add Product
   static const String addProduct = "Add Product";
 
+  //*profile 
+  static const String profile = "Profile";
+  static const String profileSetting = "Profile Settings";
+  static const String favorites = "Add Product";
+  static const String usagePolicy = "Usage policy";
+  static const String settings = "Settings";
+  static const String about = "about";
+  static const String contactUs = "Contact Us";
+  static const String logout = "Logout";
+
+  //* profile Settings
+  static const String email = "Email";
+  static const String phone = "Phone";
+  static const String personalData = "Personal Data";
+  static const String myProducts = "My Products";
+  static const String writeHere = "Write Here...";
+  static const String change = "Change";
+
+
+
 
 
 

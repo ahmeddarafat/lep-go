@@ -4,11 +4,11 @@ import 'package:lep_go/app/apis_demo.dart';
 import 'package:lep_go/presentation/resources/constants/app_assets.dart';
 import 'package:lep_go/presentation/resources/constants/app_size.dart';
 import 'package:lep_go/presentation/resources/styles/app_colors.dart';
-import 'package:lep_go/presentation/resources/widgets/back_arrow.dart';
+import 'package:lep_go/presentation/resources/widgets/public_back_arrow.dart';
 import 'package:lep_go/presentation/resources/widgets/public_button.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../resources/widgets/app_text.dart';
+import '../../resources/widgets/public_text.dart';
 import '../../resources/widgets/public_products_cards.dart';
 
 class SellerProfile extends StatelessWidget {
@@ -41,7 +41,7 @@ class SellerProfile extends StatelessWidget {
                   size: 10.sp,
                   color: AppColors.grey3b,
                 ),
-                AppText(
+                PublicText(
                   txt: sellerDemo.place,
                   color: AppColors.orange,
                   size: 10.sp,
@@ -51,7 +51,7 @@ class SellerProfile extends StatelessWidget {
             SizedBox(
               height: AppSize.getHeight(4).h,
             ),
-            AppText(
+            PublicText(
               txt: sellerDemo.name,
               color: AppColors.black,
               size: 22.sp,
@@ -68,7 +68,7 @@ class SellerProfile extends StatelessWidget {
               width: AppSize.getWidth(136).w,
               borderRadius: 6,
               useTitleWidget: true,
-              titleWidget: AppText(
+              titleWidget: PublicText(
                 txt: "Contact Me",
                 color: AppColors.white,
                 size: 11.sp,
@@ -77,7 +77,7 @@ class SellerProfile extends StatelessWidget {
             SizedBox(
               height: AppSize.getHeight(19).h,
             ),
-            AppText(
+            PublicText(
               txt: "Products",
               color: AppColors.black,
               size: 14.sp,

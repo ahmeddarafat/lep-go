@@ -13,7 +13,7 @@ import 'package:sizer/sizer.dart';
 
 import '../resources/constants/app_constant.dart';
 import '../resources/styles/app_style.dart';
-import '../resources/widgets/app_text.dart';
+import '../resources/widgets/public_text.dart';
 
 class AdditionPage extends StatefulWidget {
   const AdditionPage({super.key});
@@ -98,7 +98,7 @@ class _AdditionPageState extends State<AdditionPage> {
                   SizedBox(
                     height: size.height * 0.01,
                   ),
-                  AppText(
+                  PublicText(
                     txt: "Specify Product Type",
                     color: AppColors.black,
                     size: 16.sp,
@@ -111,7 +111,7 @@ class _AdditionPageState extends State<AdditionPage> {
                   SizedBox(
                     height: size.height * 0.01,
                   ),
-                  AppText(
+                  PublicText(
                     txt: "Product Name",
                     color: AppColors.black,
                     size: 16.sp,
@@ -139,19 +139,19 @@ class _AdditionPageState extends State<AdditionPage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      AppText(
+                      PublicText(
                         txt: "Price",
                         color: AppColors.black,
                         size: 16.sp,
                         fw: FontWeight.bold,
                       ),
-                      AppText(
+                      PublicText(
                         txt: "Peroid",
                         color: AppColors.black,
                         size: 16.sp,
                         fw: FontWeight.bold,
                       ),
-                      AppText(
+                      PublicText(
                         txt: "Discount",
                         color: AppColors.black,
                         size: 16.sp,
@@ -203,18 +203,18 @@ class _DropDownButtonState extends State<DropDownButton> {
         color: AppColors.white,
         padding: EdgeInsets.symmetric(horizontal: AppSize.getWidth(10).w),
         child: DropdownButton2(
-          hint: AppText(
+          hint: PublicText(
             txt: widget.hint,
             size: 12.sp,
-            color: AppColors.lightGray,
+            color: AppColors.gray66,
           ),
           items: widget.items
               .map(
                 (item) => DropdownMenuItem<String>(
                   value: item,
-                  child: AppText(
+                  child: PublicText(
                     txt: item,
-                    color: AppColors.lightGray,
+                    color: AppColors.gray66,
                     size: 12.sp,
                   ),
                 ),
